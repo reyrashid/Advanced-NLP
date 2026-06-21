@@ -1,0 +1,6 @@
+spacy==3.x.x
+numpy
+pandas
+scikit-learn
+joblib
+en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.x.x/en_core_web_md-3.x.x.tar.gz
