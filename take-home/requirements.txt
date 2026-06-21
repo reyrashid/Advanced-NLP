@@ -1,0 +1,16 @@
+scikit-learn>=1.3.0
+joblib>=1.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Logistic Regression model
+spacy>=3.7.0
+
+# BERT model
+transformers>=4.40.0
+datasets>=2.18.0
+torch>=2.0.0
+
+# Notebook
+jupyter>=1.0.0
+ipykernel>=6.0.0

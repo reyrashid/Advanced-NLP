@@ -1,0 +1,1843 @@
+{
+  "active_voice_arg0": [
+    {
+      "tokens": [
+        "The",
+        "chef",
+        "cooked",
+        "the",
+        "fish",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "O"
+      },
+      "description": "ARG0 detection: basic active",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "dog",
+        "bit",
+        "the",
+        "man",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "ARG0"
+      },
+      "description": "ARG0 detection: animal agent",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Maria",
+        "wrote",
+        "a",
+        "letter",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "0": "ARG0"
+      },
+      "predicted": {
+        "0": "O"
+      },
+      "description": "ARG0 detection: proper noun agent",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "student",
+        "read",
+        "the",
+        "book",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "ARG0"
+      },
+      "description": "ARG0 detection: cognitive verb",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "John",
+        "kicked",
+        "the",
+        "ball",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "0": "ARG0"
+      },
+      "predicted": {
+        "0": "O"
+      },
+      "description": "ARG0 detection: proper noun physical action",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "company",
+        "hired",
+        "a",
+        "new",
+        "employee",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "O"
+      },
+      "description": "ARG0 detection: organization as agent",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "Scientists",
+        "discovered",
+        "a",
+        "new",
+        "planet",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "0": "ARG0"
+      },
+      "predicted": {
+        "0": "O"
+      },
+      "description": "ARG0 detection: plural agent",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "He",
+        "broke",
+        "the",
+        "window",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "0": "ARG0"
+      },
+      "predicted": {
+        "0": "ARG0"
+      },
+      "description": "ARG0 detection: pronoun as agent",
+      "passed": true
+    }
+  ],
+  "active_voice_arg1": [
+    {
+      "tokens": [
+        "The",
+        "chef",
+        "cooked",
+        "the",
+        "fish",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "4": "ARG1"
+      },
+      "predicted": {
+        "4": "O"
+      },
+      "description": "ARG1 detection: basic active",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "dog",
+        "bit",
+        "the",
+        "man",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "4": "ARG1"
+      },
+      "predicted": {
+        "4": "ARG1"
+      },
+      "description": "ARG1 detection: animate patient",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Maria",
+        "wrote",
+        "a",
+        "letter",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "3": "ARG1"
+      },
+      "predicted": {
+        "3": "ARG1"
+      },
+      "description": "ARG1 detection: indefinite NP patient",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "student",
+        "read",
+        "the",
+        "book",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "4": "ARG1"
+      },
+      "predicted": {
+        "4": "ARG1"
+      },
+      "description": "ARG1 detection: cognitive verb",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "John",
+        "kicked",
+        "the",
+        "ball",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "3": "ARG1"
+      },
+      "predicted": {
+        "3": "O"
+      },
+      "description": "ARG1 detection: inanimate object",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "company",
+        "hired",
+        "a",
+        "new",
+        "employee",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "5": "ARG1"
+      },
+      "predicted": {
+        "5": "ARG1"
+      },
+      "description": "ARG1 detection: patient with modifier",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Scientists",
+        "discovered",
+        "a",
+        "new",
+        "planet",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "4": "ARG1"
+      },
+      "predicted": {
+        "4": "O"
+      },
+      "description": "ARG1 detection: inanimate patient with modifier",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "He",
+        "broke",
+        "the",
+        "window",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "3": "ARG1"
+      },
+      "predicted": {
+        "3": "ARG1"
+      },
+      "description": "ARG1 detection: inanimate patient with pronoun agent",
+      "passed": true
+    }
+  ],
+  "passive_voice_arg0": [
+    {
+      "tokens": [
+        "The",
+        "fish",
+        "was",
+        "cooked",
+        "by",
+        "the",
+        "chef",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARG0"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "ARG0 detection: agent in by-phrase",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "man",
+        "was",
+        "bitten",
+        "by",
+        "the",
+        "dog",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARG0"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "ARG0 detection: animal agent in by-phrase",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "A",
+        "letter",
+        "was",
+        "written",
+        "by",
+        "Maria",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "5": "ARG0"
+      },
+      "predicted": {
+        "5": "O"
+      },
+      "description": "ARG0 detection: proper noun in by-phrase",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "book",
+        "was",
+        "read",
+        "by",
+        "the",
+        "student",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARG0"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "ARG0 detection: cognitive verb agent in by-phrase",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "ball",
+        "was",
+        "kicked",
+        "by",
+        "John",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "5": "ARG0"
+      },
+      "predicted": {
+        "5": "O"
+      },
+      "description": "ARG0 detection: proper noun agent in by-phrase",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "report",
+        "was",
+        "written",
+        "by",
+        "the",
+        "team",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARG0"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "ARG0 detection: group agent in by-phrase",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "prize",
+        "was",
+        "won",
+        "by",
+        "the",
+        "student",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARG0"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "ARG0 detection: achievement verb agent in by-phrase",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "song",
+        "was",
+        "sung",
+        "by",
+        "the",
+        "choir",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARG0"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "ARG0 detection: group agent performance verb",
+      "passed": false
+    }
+  ],
+  "passive_voice_arg1": [
+    {
+      "tokens": [
+        "The",
+        "fish",
+        "was",
+        "cooked",
+        "by",
+        "the",
+        "chef",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG1"
+      },
+      "predicted": {
+        "1": "O"
+      },
+      "description": "ARG1 detection: patient as subject",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "man",
+        "was",
+        "bitten",
+        "by",
+        "the",
+        "dog",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG1"
+      },
+      "predicted": {
+        "1": "O"
+      },
+      "description": "ARG1 detection: animate patient as subject",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "A",
+        "letter",
+        "was",
+        "written",
+        "by",
+        "Maria",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG1"
+      },
+      "predicted": {
+        "1": "ARG1"
+      },
+      "description": "ARG1 detection: indefinite NP as subject",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "book",
+        "was",
+        "read",
+        "by",
+        "the",
+        "student",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG1"
+      },
+      "predicted": {
+        "1": "O"
+      },
+      "description": "ARG1 detection: cognitive verb passive",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "ball",
+        "was",
+        "kicked",
+        "by",
+        "John",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG1"
+      },
+      "predicted": {
+        "1": "O"
+      },
+      "description": "ARG1 detection: inanimate patient as subject",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "window",
+        "was",
+        "broken",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "expected": {
+        "1": "ARG1"
+      },
+      "predicted": {
+        "1": "O"
+      },
+      "description": "ARG1 detection: agentless passive",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "letter",
+        "was",
+        "delivered",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "expected": {
+        "1": "ARG1"
+      },
+      "predicted": {
+        "1": "ARG1"
+      },
+      "description": "ARG1 detection: agentless passive",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Mistakes",
+        "were",
+        "made",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "expected": {
+        "0": "ARG1"
+      },
+      "predicted": {
+        "0": "ARG1"
+      },
+      "description": "ARG1 detection: plural subject agentless passive",
+      "passed": true
+    }
+  ],
+  "imperative": [
+    {
+      "tokens": [
+        "Eat",
+        "the",
+        "apple",
+        "."
+      ],
+      "predicate_mask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "2": "ARG1"
+      },
+      "predicted": {
+        "2": "ARG1"
+      },
+      "description": "Basic imperative: ARG1 with no explicit ARG0",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Close",
+        "the",
+        "door",
+        "."
+      ],
+      "predicate_mask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "2": "ARG1"
+      },
+      "predicted": {
+        "2": "ARG1"
+      },
+      "description": "Basic imperative: physical action",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Read",
+        "the",
+        "instructions",
+        "carefully",
+        "."
+      ],
+      "predicate_mask": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "2": "ARG1"
+      },
+      "predicted": {
+        "2": "ARG1"
+      },
+      "description": "Imperative with adverb",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Call",
+        "your",
+        "mother",
+        "."
+      ],
+      "predicate_mask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "2": "ARG1"
+      },
+      "predicted": {
+        "2": "ARG1"
+      },
+      "description": "Imperative with possessive in ARG1",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Open",
+        "the",
+        "window",
+        "."
+      ],
+      "predicate_mask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "2": "ARG1"
+      },
+      "predicted": {
+        "2": "ARG1"
+      },
+      "description": "Basic imperative: physical action",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Write",
+        "your",
+        "name",
+        "on",
+        "the",
+        "form",
+        "."
+      ],
+      "predicate_mask": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "2": "ARG1"
+      },
+      "predicted": {
+        "2": "ARG1"
+      },
+      "description": "Imperative with locative PP",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Finish",
+        "your",
+        "homework",
+        "."
+      ],
+      "predicate_mask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "2": "ARG1"
+      },
+      "predicted": {
+        "2": "ARG1"
+      },
+      "description": "Basic imperative: task-oriented",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "Pass",
+        "the",
+        "salt",
+        "."
+      ],
+      "predicate_mask": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "2": "ARG1"
+      },
+      "predicted": {
+        "2": "ARG1"
+      },
+      "description": "Basic imperative: request",
+      "passed": true
+    }
+  ],
+  "long_range_arg0": [
+    {
+      "tokens": [
+        "The",
+        "man",
+        "who",
+        "bought",
+        "the",
+        "car",
+        "drove",
+        "the",
+        "vehicle",
+        "home",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "ARG0"
+      },
+      "description": "ARG0 detection: subject with relative clause",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "scientist",
+        "who",
+        "won",
+        "the",
+        "prize",
+        "published",
+        "a",
+        "paper",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "O"
+      },
+      "description": "ARG0 detection: subject with relative clause",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "woman",
+        "that",
+        "everyone",
+        "admired",
+        "received",
+        "an",
+        "award",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "ARG0"
+      },
+      "description": "ARG0 detection: subject with that-clause",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "company",
+        "that",
+        "built",
+        "the",
+        "bridge",
+        "went",
+        "bankrupt",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "ARG0"
+      },
+      "description": "ARG0 detection: organization subject with relative clause",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "student",
+        "who",
+        "studied",
+        "all",
+        "night",
+        "passed",
+        "the",
+        "exam",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "ARG0"
+      },
+      "description": "ARG0 detection: subject with adverbial relative clause",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "dog",
+        "that",
+        "chased",
+        "the",
+        "cat",
+        "barked",
+        "loudly",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "O"
+      },
+      "description": "ARG0 detection: animal subject with relative clause",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "lawyer",
+        "who",
+        "defended",
+        "the",
+        "suspect",
+        "won",
+        "the",
+        "case",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "ARG0"
+      },
+      "description": "ARG0 detection: occupation subject with relative clause",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "children",
+        "who",
+        "played",
+        "in",
+        "the",
+        "park",
+        "went",
+        "home",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected": {
+        "1": "ARG0"
+      },
+      "predicted": {
+        "1": "ARG0"
+      },
+      "description": "ARG0 detection: plural subject with relative clause",
+      "passed": true
+    }
+  ],
+  "long_range_arg1": [
+    {
+      "tokens": [
+        "The",
+        "man",
+        "who",
+        "bought",
+        "the",
+        "car",
+        "drove",
+        "the",
+        "vehicle",
+        "home",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "8": "ARG1"
+      },
+      "predicted": {
+        "8": "O"
+      },
+      "description": "ARG1 detection: object after long subject",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "scientist",
+        "who",
+        "won",
+        "the",
+        "prize",
+        "published",
+        "a",
+        "paper",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "8": "ARG1"
+      },
+      "predicted": {
+        "8": "ARG1"
+      },
+      "description": "ARG1 detection: object after subject with relative clause",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "woman",
+        "that",
+        "everyone",
+        "admired",
+        "received",
+        "an",
+        "award",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "7": "ARG1"
+      },
+      "predicted": {
+        "7": "ARG1"
+      },
+      "description": "ARG1 detection: object after that-clause subject",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "student",
+        "who",
+        "studied",
+        "all",
+        "night",
+        "passed",
+        "the",
+        "exam",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "8": "ARG1"
+      },
+      "predicted": {
+        "8": "ARG1"
+      },
+      "description": "ARG1 detection: object after subject with adverbial clause",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "lawyer",
+        "who",
+        "defended",
+        "the",
+        "suspect",
+        "won",
+        "the",
+        "case",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "8": "ARG1"
+      },
+      "predicted": {
+        "8": "ARG2"
+      },
+      "description": "ARG1 detection: object after relative clause subject",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "company",
+        "that",
+        "built",
+        "the",
+        "bridge",
+        "announced",
+        "new",
+        "plans",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "8": "ARG1"
+      },
+      "predicted": {
+        "8": "O"
+      },
+      "description": "ARG1 detection: object after organization subject with relative clause",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "team",
+        "that",
+        "lost",
+        "the",
+        "match",
+        "left",
+        "the",
+        "stadium",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "8": "ARG1"
+      },
+      "predicted": {
+        "8": "ARG1"
+      },
+      "description": "ARG1 detection: object after team subject with relative clause",
+      "passed": true
+    },
+    {
+      "tokens": [
+        "The",
+        "boy",
+        "who",
+        "found",
+        "the",
+        "wallet",
+        "returned",
+        "it",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "expected": {
+        "7": "ARG1"
+      },
+      "predicted": {
+        "7": "ARG1"
+      },
+      "description": "ARG1 detection: pronoun object after relative clause subject",
+      "passed": true
+    }
+  ],
+  "adjunct_ambiguity": [
+    {
+      "tokens": [
+        "I",
+        "ate",
+        "the",
+        "soup",
+        "with",
+        "a",
+        "spoon",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARGM-MNR"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "Instrument PP",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "I",
+        "ate",
+        "the",
+        "soup",
+        "with",
+        "my",
+        "sister",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARGM-COM"
+      },
+      "predicted": {
+        "6": "ARGM-LOC"
+      },
+      "description": "Comitative PP",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "He",
+        "wrote",
+        "the",
+        "letter",
+        "with",
+        "a",
+        "pen",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARGM-MNR"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "Instrument PP",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "He",
+        "wrote",
+        "the",
+        "letter",
+        "with",
+        "his",
+        "friend",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARGM-COM"
+      },
+      "predicted": {
+        "6": "ARG2"
+      },
+      "description": "Comitative PP",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "She",
+        "cut",
+        "the",
+        "bread",
+        "with",
+        "a",
+        "knife",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARGM-MNR"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "Instrument PP",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "She",
+        "cut",
+        "the",
+        "bread",
+        "with",
+        "her",
+        "mother",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "6": "ARGM-COM"
+      },
+      "predicted": {
+        "6": "O"
+      },
+      "description": "Comitative PP",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "boy",
+        "hit",
+        "the",
+        "ball",
+        "with",
+        "a",
+        "bat",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "7": "ARGM-MNR"
+      },
+      "predicted": {
+        "7": "O"
+      },
+      "description": "Instrument PP",
+      "passed": false
+    },
+    {
+      "tokens": [
+        "The",
+        "boy",
+        "hit",
+        "the",
+        "ball",
+        "with",
+        "his",
+        "teammate",
+        "."
+      ],
+      "predicate_mask": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": {
+        "7": "ARGM-COM"
+      },
+      "predicted": {
+        "7": "O"
+      },
+      "description": "Comitative PP",
+      "passed": false
+    }
+  ]
+}
